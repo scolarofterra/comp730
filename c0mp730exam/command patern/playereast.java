@@ -1,22 +1,20 @@
 package comp730;
 
-public class playernorth implements commandinterface {
-	
+public class playereast implements commandinterface {
 	String say;
-
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		say = player.getInstance().xplus();
+		 say = player.getInstance().ymin();
 		System.out.println(say);
 	}
 
 	@Override
 	public boolean undo() {
 		// TODO Auto-generated method stub
-		return false;
-		say = player.getInstance().xmin();
+		 say = player.getInstance().yplus();
 		System.out.println(say);
+		return false;
 	}
 
 }

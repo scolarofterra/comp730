@@ -8,9 +8,9 @@ public class player {
            INSTANCE = new player();
        }
         
-       return INSTANCE;
+       return INSTANCE; 
        }
-	 int x;
+	 int x; 
 	 int y;
 	 String facing;
 	 public String xplus() {
